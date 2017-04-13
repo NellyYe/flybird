@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="fly"></div>
+	
+	<!-- 引入全局对象文件 -->
+	<script src="js/Fly.js"></script>
+	<!-- 引入小鸟文件 birds.js -->
+	<script src="js/birds.js"></script>
+	<!-- 引入天空文件 sky.js -->
+	<script src="js/sky.js"></script>
+	<!-- 引入陆地文件 land.js -->
+	<script src="js/land.js"></script>
+	<!-- 引入管道文件 pipe.js -->
+	<script src="js/pipe.js"></script>
+	<!-- 引入游戏文件 game.js -->
+	<script src="js/game.js"></script>
+	
+	<script>
+
+		// 此处创建Game的方法是不需要修改的！
+		var g = Fly.factory('Game', 'fly');
+		g.startGame();
+
+	</script>
+</body>
+</html>
